@@ -4,6 +4,7 @@ import {
   } from "./Types";
 
 export const search= data=> async dispatch =>{
+    console.log("from serach action", data)
     return axios
     .post('url'+'/search', data)
     .then(response => {
