@@ -1,0 +1,28 @@
+#headerMainContainer{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+#header__rightContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#header__logo{
+    margin-left: 20px;
+    height: 25px;
+    object-fit: contain;
+    /* padding-left: 20px; */
+    align-items: center;
+}
+
+#header__center{
+    width: 45%;
+}

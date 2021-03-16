@@ -3,7 +3,9 @@ const express = require("express");
 const bodyParser = require("body-parser");
 // const logger = require("morgan");
 // const db = require("./db-init/dbConnection");
-// const search = require("./routes/apis");
+const search = require("./routes/api/Search");
+const cors = require("cors");
+
 
 
 // Declaring App to use Express Framework - Eli
@@ -16,8 +18,9 @@ app.use(
     extended: false,
   })
 );
-// app.use(cors());
+app.use(cors());
 // app.use(logger("common"));
+
 
 
 
@@ -25,6 +28,8 @@ app.use((err, req, res, next) => {
   next(error(err, req, res, next));
 });
 app.disable("etag");
+app.use("/api/search", search);
+
 
 const port = process.env.PORT || 5010;
 

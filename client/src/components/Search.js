@@ -1,19 +1,15 @@
 import React from 'react'
 import {search} from '../actions/Search'
 import {  useDispatch } from 'react-redux'
+import SearchIcon from '@material-ui/icons/Search';
 
 
 export default function Search() {
     const dispatch = useDispatch();
-
     const [searchQuery, setSearchQuery]=React.useState('')
-
-
     const onTextEnter=(enteredText)=>{
         setSearchQuery(enteredText.target.value)
     }
-
-
 
     const onSearchSubmit=(event)=> {
      
@@ -21,7 +17,8 @@ export default function Search() {
         // avoiding the page to be refreshed
         
         // call to action
-        dispatch(search(searchQuery))
+        let data={searchQuery:searchQuery}
+        dispatch(search(data))
         event.preventDefault();
 
       }
@@ -29,9 +26,12 @@ export default function Search() {
     return (
         <div>
             <form onSubmit={onSearchSubmit}> 
-                <input type="text" name="search" onChange={onTextEnter}/>
+            <div style={{display:"flex", alignItems:"center", border:"1px solid black"}}>
+                <input type="text" name="search" onChange={onTextEnter} style={{ width:"250%", height:"30px", flex:1, border:"none"}}/>
+                <SearchIcon />
+                </div>
                 
-                <input type="submit" value="Submit"  />
+                
             </form>
         </div>
     )
