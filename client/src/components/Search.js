@@ -27,8 +27,10 @@ export default function Search() {
         <div>
             <form onSubmit={onSearchSubmit}> 
             <div style={{display:"flex", alignItems:"center", border:"1px solid black"}}>
-                <input type="text" name="search" onChange={onTextEnter} style={{ width:"250%", height:"30px", flex:1, border:"none"}}/>
+                <input type="text" name="search" onChange={onTextEnter} style={{ width:"250%", height:"30px", flex:1, alignItems:"center", border:"none"}}/>
+                <div id="searchIcon">
                 <SearchIcon />
+                </div>
                 </div>
                 
                 

@@ -25,4 +25,15 @@
 
 #header__center{
     width: 45%;
+    /* align-items: center; */
+
+}
+
+#searchIcon{
+    /* padding: 5px; */
+    /* align-content: center; */
+    color:gray;
+    /* background-color:lightgray; */
+    border-left: 1px solid lightgray;
+    width: 50px;
 }
