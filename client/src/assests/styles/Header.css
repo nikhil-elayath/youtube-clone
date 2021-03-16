@@ -8,10 +8,15 @@
 }
 
 #header__rightContainer{
-    display: flex;
+     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+
+}
+#header__rightContainerIcon{
+    margin-right: 10px;
+
 
 }
 

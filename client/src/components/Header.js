@@ -20,16 +20,20 @@ export default function Header() {
                 <Search/>
                     </div>
                 <div id="header__rightContainer">
+                    <div id="header__rightContainerIcon">
                 <VideoCallIcon/>
+                </div>
                 
-                    <div>
+                <div id="header__rightContainerIcon">
                     <AppsIcon/>
                     </div>
-                    <div>
+                    <div id="header__rightContainerIcon">
                     <NotificationsIcon/>
+                    </div>
                         
-                        </div>
+                    <div id="header__rightContainerIcon">
                         <PersonIcon/>
+                </div>
                 </div>
                 </div>
             
