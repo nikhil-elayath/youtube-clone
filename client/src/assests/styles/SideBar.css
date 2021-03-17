@@ -1,6 +1,5 @@
 #mainContainer{
     background-color:white;
-    /* width: 35%; */
     height: 1000px;
     padding: 10px;
     align-content: center;
@@ -11,33 +10,106 @@
     grid-column-gap: 0px;
     align-items: center;
 }
+#selectedHomeContainer{
+    display: grid;
+    grid-template-columns: 1.5fr 5fr;
+    grid-column-gap: 0px;
+    align-items: center;
+    background-color:darkgrey;
+    /* color: red; */
+
+}
+
+
+
+
+
+
+
+
 #trendingContainer{
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
 
 }
+
+#selectedTrendingContainer{
+    display: grid;
+    grid-template-columns: 1.5fr 5fr;
+    grid-column-gap: 0px;
+    background-color: darkgray;
+
+}
+
+
+
+
+
+
+
 #subscriptionContainer{
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
 
 }
+
+
+
+#selectedSubscriptionContainer{
+    display: grid;
+    grid-template-columns: 1.5fr 5fr;
+    grid-column-gap: 0px;
+    background-color: darkgray;
+
+
+}
+
+
+
+
 #homeIcon{
     padding: 0;
+}
+#selectedHomeIcon{
+    color: red;
+
+
+}
+#trendingIcon{
+    padding: 0;
+}
+#selectedTrendingIcon{
+    color: red;
+
+
+}
+#subscriptionIcon{
+    padding: 0;
+}
+#selectedSubscriptionIcon{
+    color: red;
+
+
 }
 
 #homeContainer:hover{
     background-color:lightgray;
+    cursor: pointer;
 }
 #trendingContainer:hover{
     background-color: lightgray;
+    cursor: pointer;
+
 }
 #subscriptionContainer:hover{
     background-color: lightgray;
+    cursor: pointer;
+
 }
 
-#homeContainer:hover> #homeIcon{
+/* #homeContainer:hover> #homeIcon{
     color: red;
 }
 #trendingContainer:hover> #trendingIcon{
@@ -45,4 +117,4 @@
 }
 #subscriptionContainer:hover> #subIcon{
     color: red;
-}
+} */
