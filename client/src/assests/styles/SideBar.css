@@ -1,5 +1,5 @@
 #mainContainer{
-    background-color: aquamarine;
+    background-color:white;
     /* width: 35%; */
     height: 1000px;
     padding: 10px;
@@ -9,19 +9,40 @@
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
-    padding-bottom: 10px;
+    align-items: center;
 }
 #trendingContainer{
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
-    padding-bottom: 10px;
 
 }
 #subscriptionContainer{
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
-    padding-bottom: 10px;
 
+}
+#homeIcon{
+    padding: 0;
+}
+
+#homeContainer:hover{
+    background-color:lightgray;
+}
+#trendingContainer:hover{
+    background-color: lightgray;
+}
+#subscriptionContainer:hover{
+    background-color: lightgray;
+}
+
+#homeContainer:hover> #homeIcon{
+    color: red;
+}
+#trendingContainer:hover> #trendingIcon{
+    color: red;
+}
+#subscriptionContainer:hover> #subIcon{
+    color: red;
 }

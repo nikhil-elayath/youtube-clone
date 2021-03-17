@@ -10,7 +10,7 @@ export default function SideBar() {
         <div>
             <div id="mainContainer">
                 <div id="homeContainer">
-                    <div>
+                    <div id="homeIcon">
                     <HomeIcon/>                        
                          </div>
                     <div>
@@ -19,7 +19,7 @@ export default function SideBar() {
             
                     </div>
                 <div id="trendingContainer">
-                    <div>
+                <div id="trendingIcon">
                     <WhatshotIcon/>                        
                          </div>
                     <div>
@@ -28,7 +28,7 @@ export default function SideBar() {
             
                     </div>
                 <div id="subscriptionContainer">
-                    <div>
+                <div id="subIcon">
                     <SubscriptionsIcon/>                        
                          </div>
                     <div>
