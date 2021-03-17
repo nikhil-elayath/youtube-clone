@@ -1,11 +1,14 @@
 import React from 'react'
 import {search} from '../actions/Search'
-import {  useDispatch } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import SearchIcon from '@material-ui/icons/Search';
 
 
 export default function Search() {
     const dispatch = useDispatch();
+    const store = useSelector((state) => state);
+    console.log("printing store", store)
+
     const [searchQuery, setSearchQuery]=React.useState('')
     const onTextEnter=(enteredText)=>{
         setSearchQuery(enteredText.target.value)

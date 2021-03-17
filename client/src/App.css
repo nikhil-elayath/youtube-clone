@@ -39,11 +39,11 @@
   }
 }
 
-#appMainContainer{
+/* #appMainContainer{
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-}
+} */
 
 
 #header{
@@ -51,4 +51,14 @@
   top: 0;
   z-index: 100;
   background-color:white
+}
+
+
+
+#appMainContainer{
+  
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-column-gap: 0px;
+
 }
