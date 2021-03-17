@@ -1,0 +1,34 @@
+#searchResultCardContainer{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-column-gap: 0px;
+ 
+
+}
+#detailsContainer{
+    padding-left: 20px;
+    /* padding-top: 1px; */
+  
+    /* background-color: aquamarine; */
+    align-items: center;
+}
+
+#imageContainer{
+}
+
+#image{
+    height: 100%;
+    width: 100%;
+
+
+}
+#viewsAndYears{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+#channelLogoAndName{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
