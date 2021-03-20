@@ -23,15 +23,16 @@ try {
         key:youtubeAPIKey,
         part:'snippet',
         q:searchQuery,
-        order:"date",
-        publishedBefore: currentDate
+        // order:"relev",
+        publishedBefore: currentDate,
+        // location
     }).then(async(response)=>{
-        console.log("response",response.data.items)
+        console.log("response",response.data)
 
           res.status(200).json({
             status: 200,
             message: "videos fetched successfully",
-            data: response.data.items,
+            data: response.data,
           });
         
 

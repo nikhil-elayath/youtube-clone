@@ -1,7 +1,8 @@
 #searchResultCardContainer{
     display: grid;
-    grid-template-columns: 2fr 5fr;
+    grid-template-columns: 2.5fr 5fr;
     grid-column-gap: 0px;
+    padding-bottom: 10px;
  
 
 }

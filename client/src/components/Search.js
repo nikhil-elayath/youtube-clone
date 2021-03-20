@@ -2,9 +2,13 @@ import React from 'react'
 import {search} from '../actions/Search'
 import { useSelector, useDispatch } from 'react-redux'
 import SearchIcon from '@material-ui/icons/Search';
+import { BrowserRouter as Router, Route, Switch , Redirect, useHistory} from "react-router-dom";
 
 
-export default function Search() {
+
+export default function Search(props) {
+    const history = useHistory();
+
     const dispatch = useDispatch();
     const store = useSelector((state) => state);
     console.log("printing store", store)
@@ -14,15 +18,18 @@ export default function Search() {
         setSearchQuery(enteredText.target.value)
     }
 
-    const onSearchSubmit=(event)=> {
+    const onSearchSubmit=async(event)=> {
      
         console.log('An essay was submitted: ',searchQuery);
         // avoiding the page to be refreshed
         
+        event.preventDefault();
         // call to action
         let data={searchQuery:searchQuery}
-        dispatch(search(data))
-        event.preventDefault();
+        await dispatch(search(data))
+history.push( {pathname: "/search"
+    })
+        
 
       }
 
