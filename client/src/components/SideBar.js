@@ -8,6 +8,8 @@ import HistorySharpIcon from '@material-ui/icons/HistorySharp';
 import OndemandVideoOutlinedIcon from '@material-ui/icons/OndemandVideoOutlined';
 import WatchLaterOutlinedIcon from '@material-ui/icons/WatchLaterOutlined';
 import ThumbUpOutlinedIcon from '@material-ui/icons/ThumbUpOutlined';
+import { BrowserRouter as Router, Route, Switch , Redirect, useHistory, useLocation} from "react-router-dom";
+
 
 
 export default function SideBar() {
@@ -19,14 +21,18 @@ export default function SideBar() {
     const [yourVideosSelected, setYourVideosSelected]=React.useState(false)
     // const [watchLaterSelected, setWatchLaterSelected]=React.useState(false)
     // const [likedVideosSelected, setlikedVideosSelected]=React.useState(false)
+    const history = useHistory();
+
 
 
     const onHomeContainerClick=()=>{
-        console.log("onHomeContainerClick",onHomeContainerClick)
+
         setHomeSelected(true)
         setTrendingSelected(false)
        setSubscriptionSelected(false)
        console.log(homeSelected,setTrendingSelected)
+       history.push( {pathname: "/"
+    }) 
 
     }
     const onTrendingContainerClick=(test)=>{

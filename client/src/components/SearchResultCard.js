@@ -3,6 +3,7 @@ import "../assests/styles/SearchResultCard.css";
 import { useSelector, useDispatch} from 'react-redux'
 import { BrowserRouter as Router, Route, Switch , Redirect, useHistory, useLocation} from "react-router-dom";
 
+import {getVideoDetailsById} from '../actions/Videos'
 
 
 
@@ -15,12 +16,20 @@ export default function SearchResultCard(props) {
     const store = useSelector((state) => state.searchReducer);
     const history = useHistory();
 
+    const dispatch = useDispatch();
+
     console.log("from card",store.searchResults)
     // const mapStateToProps = state
     const navigateToSpecificVideo=(videoId)=>{
         console.log("navigateToSpecificVideo",videoId)
+        // let data={videoId:location.pathname.split('/')[2]}
+
+        // dispatch(getVideoDetailsById(data))
+
+
         history.push( {pathname: "/play-video/"+videoId
-    })    }
+    })    
+}
 
 
 

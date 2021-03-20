@@ -1,3 +1,5 @@
 export const SEARCH_RESULTS = "SEARCH_RESULTS";
+export const VIDEO_DETAILS_BY_ID = "VIDEO_DETAILS_BY_ID";
+
 
 
