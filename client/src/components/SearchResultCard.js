@@ -1,15 +1,26 @@
 import React,{useEffect} from 'react'
 import "../assests/styles/SearchResultCard.css";
 import { useSelector, useDispatch} from 'react-redux'
+import { BrowserRouter as Router, Route, Switch , Redirect, useHistory, useLocation} from "react-router-dom";
+
+
 
 
 
 
 export default function SearchResultCard(props) {
+    let location = useLocation();
+    console.log("location",location)
+
     const store = useSelector((state) => state.searchReducer);
+    const history = useHistory();
+
     console.log("from card",store.searchResults)
     // const mapStateToProps = state
-
+    const navigateToSpecificVideo=(videoId)=>{
+        console.log("navigateToSpecificVideo",videoId)
+        history.push( {pathname: "/play-video/"+videoId
+    })    }
 
 
 
@@ -21,24 +32,19 @@ export default function SearchResultCard(props) {
               return(
                   <>
               
-            <div id="searchResultCardContainer">
+            <div id="searchResultCardContainer" onClick={()=>{navigateToSpecificVideo(item.id.videoId)}}>
             <div id="imageContainer">
                 <img id="image" src={item.snippet.thumbnails.high.url} />
 
                 </div>
                 <div id="detailsContainer">
                    {item.snippet.channelTitle}
-                    {/* <div id="viewsAndYears">
-                        <div> Views</div> 
-                        <div> Years</div> 
+                 
 
-                    </div> */}
+                  
                 <div >
                     <p>Views . {item.snippet.publishedAt} </p>
-                    {/* Video title
-                    <div id="viewsAndYears">
-                        <div> Views</div> 
-                        <div> Years</div>  */}
+                 
 
                     </div>
                     <div id="channelLogoAndName">
