@@ -1,0 +1,11 @@
+#videoSpecificContainer{
+    /* width: 100%; */
+
+}
+
+#videoTitle>p{
+    font-size: 150%;
+    padding: 0;
+    margin: 0;
+
+}

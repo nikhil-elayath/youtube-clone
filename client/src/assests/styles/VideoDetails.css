@@ -1,0 +1,19 @@
+#mainContainerO{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 70%;
+    padding-top: 10px;
+}
+#viewsAndDateMainContaiener{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 70%;
+}
+#likesAndDislikesMainContaiener{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 70%;
+}
