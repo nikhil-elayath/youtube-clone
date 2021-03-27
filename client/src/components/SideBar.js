@@ -26,10 +26,12 @@ export default function SideBar() {
 
 
     const onHomeContainerClick=()=>{
-
-        setHomeSelected(true)
+        setSubscriptionSelected(false)
         setTrendingSelected(false)
-       setSubscriptionSelected(false)
+        setHomeSelected(true)
+        setHistorySelected(false)
+        setLibrarySelected(false)
+        setYourVideosSelected(false)
        console.log(homeSelected,setTrendingSelected)
        history.push( {pathname: "/"
     }) 
@@ -37,9 +39,12 @@ export default function SideBar() {
     }
     const onTrendingContainerClick=(test)=>{
         console.log("onHomeContainerClick",onHomeContainerClick)
+        setSubscriptionSelected(false)
         setTrendingSelected(true)
         setHomeSelected(false)
-        setSubscriptionSelected(false)
+        setHistorySelected(false)
+        setLibrarySelected(false)
+        setYourVideosSelected(false)
 
 
 
@@ -49,28 +54,33 @@ export default function SideBar() {
         setSubscriptionSelected(true)
         setTrendingSelected(false)
         setHomeSelected(false)
+        setHistorySelected(false)
+        setLibrarySelected(false)
+        setYourVideosSelected(false)
 
     }
     const onLibraryContainerClick=()=>{
         console.log("onHomeContainerClick",onHomeContainerClick)
-        setLibrarySelected(true)
         setSubscriptionSelected(false)
         setTrendingSelected(false)
         setHomeSelected(false)
+        setHistorySelected(false)
+        setLibrarySelected(true)
+        setYourVideosSelected(false)
 
     }
     const onHistoryContainerClick=()=>{
         console.log("onHomeContainerClick",onHomeContainerClick)
-        setHistorySelected(true)
         setSubscriptionSelected(false)
         setTrendingSelected(false)
         setHomeSelected(false)
+        setHistorySelected(true)
         setLibrarySelected(false)
+        setYourVideosSelected(false)
 
 
     }
     const onYourVideosContainerClick=()=>{
-        console.log("onHomeContainerClick",onHomeContainerClick)
         setSubscriptionSelected(false)
         setTrendingSelected(false)
         setHomeSelected(false)
