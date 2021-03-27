@@ -1,6 +1,6 @@
 #mainContainer{
     background-color:white;
-    height: 1000px;
+    height: 100px;
     padding: 10px;
     align-content: center;
 }
@@ -10,6 +10,8 @@
     grid-column-gap: 0px;
     align-items: center;
     padding: 5px;
+    cursor: pointer;
+
 
 }
 #selectedHomeContainer{
@@ -20,6 +22,8 @@
     background-color:#E5E5E5;
     padding: 5px;
     /* color:#FF0000; */
+    cursor: pointer;
+
 
 }
 
@@ -35,6 +39,8 @@
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
     padding: 5px;
+    cursor: pointer;
+
 
 
 }
@@ -45,6 +51,8 @@
     grid-column-gap: 0px;
     background-color: #E5E5E5;
     padding: 5px;
+    cursor: pointer;
+
 
 
 }
@@ -60,6 +68,8 @@
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
     padding: 5px;
+    cursor: pointer;
+
 
 
 }
@@ -72,6 +82,7 @@
     grid-column-gap: 0px;
     background-color: #E5E5E5;
     padding: 5px;
+    cursor: pointer;
 
 
 }
@@ -80,6 +91,8 @@
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
     padding: 5px;
+    cursor: pointer;
+
 
     /* background-color: #E5E5E5; */
 }
@@ -89,6 +102,8 @@
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
     padding: 5px;
+    cursor: pointer;
+
 
     /* background-color: #E5E5E5; */
 }
@@ -98,6 +113,8 @@
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
     padding: 5px;
+    cursor: pointer;
+
 
     /* background-color: #E5E5E5; */
 }
@@ -107,6 +124,8 @@
     grid-column-gap: 0px;
     background-color: #E5E5E5;
     padding: 5px;
+    cursor: pointer;
+
 
 }
 
@@ -117,6 +136,8 @@
     grid-column-gap: 0px;
     background-color: #E5E5E5;
     padding: 5px;
+    cursor: pointer;
+
 
 
 }
@@ -126,6 +147,7 @@
     grid-column-gap: 0px;
     background-color: #E5E5E5;
     padding: 5px;
+    cursor: pointer;
 
 
 }
@@ -135,6 +157,8 @@
     grid-column-gap: 0px;
     background-color: #E5E5E5;
     padding: 5px;
+    cursor: pointer;
+
 
 
 }
@@ -143,6 +167,8 @@
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
     padding: 5px;
+    cursor: pointer;
+
 
 
 }

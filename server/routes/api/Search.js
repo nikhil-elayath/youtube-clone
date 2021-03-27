@@ -23,8 +23,8 @@ try {
         key:youtubeAPIKey,
         part:'snippet',
         q:searchQuery,
-        // order:"relev",
-        publishedBefore: currentDate,
+        order:"relevance",
+        // publishedBefore: currentDate,
         // location
     }).then(async(response)=>{
         console.log("response",response.data)
