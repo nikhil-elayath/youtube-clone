@@ -58,7 +58,7 @@
 #appMainContainer{
   
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1.09fr 5fr;
   grid-column-gap: 0px;
 
 }
