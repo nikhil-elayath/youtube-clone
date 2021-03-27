@@ -16,4 +16,5 @@
     justify-content: space-evenly;
     flex-direction: row;
     width: 70%;
+    align-content: center;
 }

@@ -1,25 +1,26 @@
 import React from 'react'
 import "../assests/styles/VideoDetails.css";
+import ThumbUpIcon from '@material-ui/icons/ThumbUp';
+import ThumbDownIcon from '@material-ui/icons/ThumbDown';
 
 
-export default function VideoDetails() {
+export default function VideoDetails(props) {
+    console.log("props",props)
     return (
         <div>
             <div id="mainContainerO">
                 <div id="viewsAndDateMainContaiener">
                     <div>
-                        views
+                         {props.viewCount} views . 
                         </div>
-                    {/* <div>
-                        date
-                        </div> */}
+                   
                     </div>
                 <div id="likesAndDislikesMainContaiener">
                     <div>
-                        likes
+                    <ThumbUpIcon/> {props.likes}
                         </div>
                     <div>
-                        dislikes
+                       <ThumbDownIcon/> {props.dislikes}
                         </div>
                     </div>
 

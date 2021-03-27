@@ -20,14 +20,18 @@ export default function SearchResultCard(props) {
 
     console.log("from card",store.searchResults)
     // const mapStateToProps = state
-    const navigateToSpecificVideo=(videoId, videoTitle)=>{
-        console.log("navigateToSpecificVideo",videoId, videoTitle)
+    const navigateToSpecificVideo=(videoId, videoTitle,likes,dislikes,viewCount)=>{
+        console.log("navigateToSpecificVideo",likes,)
    
 
 
         history.push( {pathname: "/play-video/"+videoId,
     },
-{    videoTitle:videoTitle
+{    videoTitle:videoTitle,
+    likes:likes,
+    dislikes:dislikes,
+    viewCount:viewCount
+
 }    )    
 }
 
@@ -41,7 +45,7 @@ export default function SearchResultCard(props) {
               return(
                   <>
               
-            <div id="searchResultCardContainer" onClick={()=>{navigateToSpecificVideo(item.id.videoId, item.snippet.title)}}>
+            <div id="searchResultCardContainer" onClick={()=>{navigateToSpecificVideo(item.id.videoId, item.snippet.title) }}>
             <div id="imageContainer">
                 <img id="image" src={item.snippet.thumbnails.high.url} />
 

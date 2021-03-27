@@ -9,14 +9,17 @@
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
     align-items: center;
+    padding: 5px;
+
 }
 #selectedHomeContainer{
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
-    align-items: center;
-    background-color:darkgrey;
-    /* color: red; */
+    align-content: center;
+    background-color:#E5E5E5;
+    padding: 5px;
+    /* color:#FF0000; */
 
 }
 
@@ -31,6 +34,8 @@
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
+    padding: 5px;
+
 
 }
 
@@ -38,7 +43,9 @@
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
-    background-color: darkgray;
+    background-color: #E5E5E5;
+    padding: 5px;
+
 
 }
 
@@ -52,6 +59,8 @@
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
+    padding: 5px;
+
 
 }
 
@@ -61,7 +70,8 @@
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
-    background-color: darkgray;
+    background-color: #E5E5E5;
+    padding: 5px;
 
 
 }
@@ -69,27 +79,35 @@
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
-    /* background-color: darkgray; */
+    padding: 5px;
+
+    /* background-color: #E5E5E5; */
 }
 
 #historyContainer{
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
-    /* background-color: darkgray; */
+    padding: 5px;
+
+    /* background-color: #E5E5E5; */
 }
 
 #yourVideosContainer{
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
-    /* background-color: darkgray; */
+    padding: 5px;
+
+    /* background-color: #E5E5E5; */
 }
 #selectedYourVideosContainer{
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
-    background-color: darkgray;
+    background-color: #E5E5E5;
+    padding: 5px;
+
 }
 
 
@@ -97,27 +115,35 @@
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
-    background-color: darkgray;
+    background-color: #E5E5E5;
+    padding: 5px;
+
 
 }
 #selectedHistoryContainer{
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
-    background-color: darkgray;
+    background-color: #E5E5E5;
+    padding: 5px;
+
 
 }
 #selectedYourVideosContainer{
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
-    background-color: darkgray;
+    background-color: #E5E5E5;
+    padding: 5px;
+
 
 }
 #yourVideosContainer{
     display: grid;
     grid-template-columns: 1.5fr 5fr;
     grid-column-gap: 0px;
+    padding: 5px;
+
 
 }
 
@@ -126,69 +152,90 @@
 
 #homeIcon{
     padding: 0;
+    color:#616160;
+
+}
+#libraryIcon{
+    padding: 0;
+    color:#616160;
+
+}
+#historyIcon{
+    padding: 0;
+    color:#616160;
+
+}
+#yourVideosIcon{
+    padding: 0;
+    color:#616160;
+
 }
 #selectedHomeIcon{
-    color: red;
+    color:#FF0000;
 
 
 }
 #trendingIcon{
     padding: 0;
+    color:#616160;
+
 }
 #selectedTrendingIcon{
-    color: red;
+    color:#FF0000;
 
 
 }
 #selectedYourVideosIcon{
-    color: red;
+    color:#FF0000;
 
 
 }
 #selectedHistoryIcon{
-    color: red;
+    color:#FF0000;
 
 
 }
 #subscriptionIcon{
     padding: 0;
+    color:#616160;
+
 }
 #selectedSubscriptionIcon{
-    color: red;
+    color:#FF0000;
 
 
 }
 #selectedLibraryIcon{
-    color: red;
+    color:#FF0000;
 
 
 }
 
 #homeContainer:hover{
-    background-color:lightgray;
+    background-color:#F2F2F2;
     cursor: pointer;
 }
 #libraryContainer:hover{
-    background-color:lightgray;
+    background-color:#F2F2F2;
     cursor: pointer;
 }
 #trendingContainer:hover{
-    background-color: lightgray;
+    background-color: #F2F2F2;
     cursor: pointer;
 
 }
 #subscriptionContainer:hover{
-    background-color: lightgray;
+    background-color: #F2F2F2;
     cursor: pointer;
 
 }
 #historyContainer:hover{
-    background-color: lightgray;
+    background-color: #F2F2F2;
     cursor: pointer;
 
 }
 #yourVideosContainer:hover{
-    background-color: lightgray;
+    background-color: #F2F2F2;
     cursor: pointer;
 
 }
@@ -210,13 +257,3 @@
 
 
 
-
-/* #homeContainer:hover> #homeIcon{
-    color: red;
-}
-#trendingContainer:hover> #trendingIcon{
-    color: red;
-}
-#subscriptionContainer:hover> #subIcon{
-    color: red;
-} */
