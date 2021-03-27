@@ -36,8 +36,8 @@ history.push( {pathname: "/search"
     return (
         <div>
             <form onSubmit={onSearchSubmit}> 
-            <div style={{display:"flex", alignItems:"center", border:"1px solid black"}}>
-                <input type="text" name="search" placeholder="Search" onChange={onTextEnter} style={{ width:"250%", height:"30px", flex:1, alignItems:"center", border:"none"}}/>
+            <div style={{display:"flex", alignItems:"center", border:"1px solid #CCCDCD"}}>
+                <input type="text" name="search" placeholder="Search" onChange={onTextEnter} style={{ width:"250%", height:"30px", flex:1, alignItems:"center", border:"none", paddingLeft:"10px"}}/>
                 <div id="searchIcon" onClick={onSearchSubmit}>
                 <SearchIcon />
                 </div>
