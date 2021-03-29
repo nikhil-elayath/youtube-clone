@@ -26,7 +26,7 @@ export default function App(props) {
     
       </Route>
 
-      <Route exact path="/search">
+      {/* <Route exact path="/search">
     <div>
        <div id="header">
             <Header/>
@@ -60,7 +60,7 @@ export default function App(props) {
             </div>
           </div>
     </div>
-      </Route>
+      </Route> */}
   </Switch>
   </Router>
  
