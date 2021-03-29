@@ -20,7 +20,7 @@ router.post("/search", async (req, res, next) => {
  
 try {
       google.youtube('v3').search.list({
-        key:youtubeAPIKey,
+        key:'AIzaSyDwOxM66btmflpeUkt6Q6Ahg3beRz4CBY4',
         part:'snippet',
         q:searchQuery,
         order:"relevance",
