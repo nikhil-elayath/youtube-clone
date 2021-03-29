@@ -19,7 +19,7 @@ export const getVideoDetailsById= (data)=> async (dispatch) =>{
     
     console.log("from VIDEO_DETAILS_BY_ID action", videoId)
     return axios
-    .get('https://www.googleapis.com/youtube/v3/videos?id='+videoId+'&key='+'AIzaSyCjb5t9GnRvzzStRzrdrTA_gZc_YVYoqPg'+'&part=snippet,contentDetails,statistics,status')
+    .get('https://www.googleapis.com/youtube/v3/videos?id='+videoId+'&key='+'AIzaSyDwOxM66btmflpeUkt6Q6Ahg3beRz4CBY4'+'&part=snippet,contentDetails,statistics,status')
     .then(response => {
         console.log("response from actons", response)
        return dispatch({
