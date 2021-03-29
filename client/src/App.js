@@ -22,22 +22,8 @@ export default function App(props) {
     <Provider store={store}>
 <Router>
   <Switch>
-    <Route exact path="/">
-    <div>
-       <div id="header">
-            <Header/>
-            
-        </div>
-        <div  id="appMainContainer">
-        <div>
-          <SideBar/>
-
-          </div>
-          <div>
-            <MainSection/>
-            </div>
-          </div>
-    </div>
+    <Route exact path="/"  component={HomePage}>
+    
       </Route>
 
       <Route exact path="/search">
