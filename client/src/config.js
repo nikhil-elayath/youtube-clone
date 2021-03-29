@@ -1,6 +1,6 @@
 module.exports = {
-    url: 'http://localhost:5010/api/',
-    youtubeApiKey:'AIzaSyCjb5t9GnRvzzStRzrdrTA_gZc_YVYoqPg'
+    url: 'https://youtube-clone-node.herokuapp.com/api/',
+    youtubeApiKey:'AIzaSyDwOxM66btmflpeUkt6Q6Ahg3beRz4CBY4'
     
 
   };

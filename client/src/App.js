@@ -22,7 +22,8 @@ export default function App(props) {
     <Provider store={store}>
 <Router>
   <Switch>
-  <Route exact path="/">
+  <Route 
+  exact path="/">
     <div>
        <div id="header">
             <Header/>
