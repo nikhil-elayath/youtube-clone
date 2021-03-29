@@ -23,7 +23,7 @@ export default function App(props) {
 <Router>
   <Switch>
     <Route 
-     basename={`${process.env.PUBLIC_URL}/`}
+     basename={`https://nikhil-elayath.github.io/youtube-clone/`}
     exact path="/"  component={HomePage}>
     
       </Route>
