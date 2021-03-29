@@ -22,7 +22,9 @@ export default function App(props) {
     <Provider store={store}>
 <Router>
   <Switch>
-    <Route exact path="/"  component={HomePage}>
+    <Route 
+     basename={`${process.env.PUBLIC_URL}/`}
+    exact path="/"  component={HomePage}>
     
       </Route>
 
