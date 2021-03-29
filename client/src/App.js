@@ -22,13 +22,26 @@ export default function App(props) {
     <Provider store={store}>
 <Router>
   <Switch>
-    <Route 
-     basename={`https://nikhil-elayath.github.io/youtube-clone/`}
-    exact path="/"  component={HomePage}>
-    
+  <Route exact path="/">
+    <div>
+       <div id="header">
+            <Header/>
+            
+        </div>
+        <div  id="appMainContainer">
+        <div>
+          <SideBar/>
+
+          </div>
+          <div>
+            <MainSection/>
+            </div>
+          </div>
+    </div>
+          
       </Route>
 
-      {/* <Route exact path="/search">
+       <Route exact path="/search">
     <div>
        <div id="header">
             <Header/>
@@ -62,7 +75,7 @@ export default function App(props) {
             </div>
           </div>
     </div>
-      </Route> */}
+      </Route> 
   </Switch>
   </Router>
  
