@@ -8,6 +8,7 @@ import HistorySharpIcon from '@material-ui/icons/HistorySharp';
 import OndemandVideoOutlinedIcon from '@material-ui/icons/OndemandVideoOutlined';
 import WatchLaterOutlinedIcon from '@material-ui/icons/WatchLaterOutlined';
 import ThumbUpOutlinedIcon from '@material-ui/icons/ThumbUpOutlined';
+import ExploreIcon from '@material-ui/icons/Explore';
 import { BrowserRouter as Router, Route, Switch , Redirect, useHistory, useLocation} from "react-router-dom";
 
 
@@ -124,10 +125,10 @@ export default function SideBar() {
                     </div>
                 <div id= {trendingSelected==true? "selectedTrendingContainer": "trendingContainer"} onClick={onTrendingContainerClick}>
                 <div id={trendingSelected==true?"selectedTrendingIcon":"trendingIcon"}>
-                    <WhatshotIcon/>                        
+                    <ExploreIcon/>                        
                          </div>
                     <div>
-                        Trending
+                        Explore
                         </div>
             
                     </div>
