@@ -1,6 +1,4 @@
 import React from 'react'
-import Search from './components/Search'
-import HomePage from './pages/HomePage'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from './components/Header'
 import SideBar from './components/SideBar'
@@ -17,50 +15,71 @@ import store from "./store";
 
 
 export default function App(props) {
-  console.log("from app",props)
+  console.log("from app new",process.env.PUBLIC_URL)
   return (
     <Provider store={store}>
 <Router>
   <Switch>
   <Route 
-  exact path="/">
-    <div>
-       <div id="header">
-            <Header/>
-            
-        </div>
-        <div  id="appMainContainer">
-        <div>
-          <SideBar/>
+//  basename={window.location.pathname || ''}
+  exact path="/"
+  render={()=>
+  <div>
+    <div id="header">
+         <Header/>
+         
+     </div>
+     <div  id="appMainContainer">
+     <div>
+       <SideBar/>
 
-          </div>
-          <div>
-            <MainSection/>
-            </div>
-          </div>
-    </div>
+       </div>
+       <div>
+         <MainSection/>
+         </div>
+       </div>
+ </div>}
+  
+  >
+
+    
+    
           
       </Route>
 
-       <Route exact path="/search">
-    <div>
-       <div id="header">
-            <Header/>
-            
-        </div>
-        <div  id="appMainContainer">
-        <div>
-          <SideBar/>
+       <Route 
+//  basename={window.location.pathname || ''}
 
-          </div>
-          <div>
-            <SearchResultsPage />
-            </div>
-          </div>
-    </div>
+       exact path="/search"
+
+       render={()=>
+        <div>
+        <div id="header">
+             <Header/>
+             
+         </div>
+         <div  id="appMainContainer">
+         <div>
+           <SideBar/>
+ 
+           </div>
+           <div>
+             <SearchResultsPage />
+             </div>
+           </div>
+     </div>
+
+       }
+       
+       
+       >
+   
       </Route>
 
-      <Route exact path="/play-video/:id">
+      <Route   
+      //  basename={window.location.pathname || ''}
+
+  exact path="/play-video/:id">
     <div>
        <div id="header">
             <Header/>

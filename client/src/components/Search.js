@@ -27,8 +27,9 @@ export default function Search(props) {
         // call to action
         let data={searchQuery:searchQuery}
         await dispatch(search(data))
-history.push( {pathname: "/search"
-    })
+     
+history.push( "/search"
+    )
         
 
       }

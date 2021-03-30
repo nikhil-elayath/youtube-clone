@@ -5,8 +5,7 @@ import {
   import config from "../config";
   const url = config.url;
 //   const config = require("config");
-const youtubeAPIKey = config.youtubeAPIKey;
-console.log("youtubeAPIKey",youtubeAPIKey)
+
 
 
 
