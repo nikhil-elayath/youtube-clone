@@ -25,7 +25,9 @@ export default function Header() {
         <div>
             <div id='headerMainContainer'>
                 <div id="header__left">
+                    <div id="drawerLogo">
                     <MenuIcon/>
+                    </div>
                     <img id="header__logo" onClick={()=>onYoutubeLogoClick()}
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/512px-YouTube_Logo_2017.svg.png"
                     />
@@ -35,14 +37,22 @@ export default function Header() {
                     </div>
                 <div id="header__rightContainer">
                     <div id="header__rightContainerIcon">
+                    <div id="appsIcon">
+
                 <VideoCallIcon/>
+                </div>
                 </div>
                 
                 <div id="header__rightContainerIcon">
+                    <div id="appsIcon">
                     <AppsIcon/>
                     </div>
+                    </div>
                     <div id="header__rightContainerIcon">
+                    <div id="appsIcon">
+
                     <NotificationsIcon/>
+                    </div>
                     </div>
                         
                     <div id="header__rightContainerIcon">

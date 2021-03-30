@@ -37,7 +37,7 @@ history.push( "/search"
     return (
         <div>
             <form onSubmit={onSearchSubmit}> 
-            <div style={{display:"flex", alignItems:"center", border:"1px solid #CCCDCD"}}>
+            <div style={{display:"flex", alignItems:"center", border:"1px solid #CCCDCD", display:"none"}}>
                 <input type="text" name="search" placeholder="Search" onChange={onTextEnter} style={{ width:"250%", height:"30px", flex:1, alignItems:"center", border:"none", paddingLeft:"10px"}}/>
                 <div id="searchIcon" onClick={onSearchSubmit}>
                 <SearchIcon />

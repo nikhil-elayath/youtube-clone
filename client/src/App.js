@@ -30,7 +30,7 @@ export default function App(props) {
          
      </div>
      <div  id="appMainContainer">
-     <div>
+     <div >
        <SideBar/>
 
        </div>
