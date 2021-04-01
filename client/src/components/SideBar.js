@@ -118,27 +118,27 @@ export default function SideBar() {
                     <div id={homeSelected==true?"selectedHomeIcon":"homeIcon"}>
                     <HomeIcon/>                        
                          </div>
-                    {/* <div>
+                    <div id="text">
                         Home
-                        </div> */}
+                        </div>
             
                     </div>
                 <div id= {trendingSelected==true? "selectedTrendingContainer": "trendingContainer"} onClick={onTrendingContainerClick}>
                 <div id={trendingSelected==true?"selectedTrendingIcon":"trendingIcon"}>
                     <ExploreIcon/>                        
                          </div>
-                    {/* <div>
+                         <div id="text">
                         Explore
-                        </div> */}
+                        </div>
             
                     </div>
                 <div id= {subscriptionSelected==true? "selectedSubscriptionContainer": "subscriptionContainer"} onClick={onSubsContainerClick}>
                 <div id={subscriptionSelected==true?"selectedSubscriptionIcon":"subscriptionIcon"}>
                     <SubscriptionsIcon/>                        
                          </div>
-                    {/* <div>
+                         <div id="text">
                         Subscriptions
-                        </div> */}
+                        </div>
             
                     </div>
           
@@ -148,27 +148,27 @@ export default function SideBar() {
                     <div id={librarySelected==true?"selectedLibraryIcon":"libraryIcon"}>
                     <VideoLibrarySharpIcon/>                        
                          </div>
-                    {/* <div>
+                         <div id="text">
                         Library
-                        </div> */}
+                        </div>
             
                     </div>
                 <div id= {historySelected==true? "selectedHistoryContainer": "historyContainer"} onClick={onHistoryContainerClick}>
                 <div id={historySelected==true?"selectedHistoryIcon":"historyIcon"}>
                     <HistorySharpIcon/>                        
                          </div>
-                    {/* <div>
+                         <div id="text">
                         History
-                        </div> */}
+                        </div>
             
                     </div>
                 <div id= {yourVideosSelected==true? "selectedYourVideosContainer": "yourVideosContainer"} onClick={onYourVideosContainerClick}>
                 <div id={yourVideosSelected==true?"selectedYourVideosIcon":"yourVideosIcon"}>
                     <OndemandVideoOutlinedIcon/>                        
                          </div>
-                    {/* <div>
+                         <div id="text">
                         Your videos
-                        </div> */}
+                        </div>
             
                     </div>
                 {/* <div id= {subscriptionSelected==true? "selectedSubscriptionContainer": "subscriptionContainer"} onClick={onSubsContainerClick}>

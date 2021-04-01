@@ -294,7 +294,13 @@
 
     }
 
+    #text{
+        display: none;
+    }
+
     #selectedHomeContainer{
+            align-items: center;
+
 /* background-color: aqua; */
     /* display: grid;
     grid-template-columns: 1.5fr 5fr;
