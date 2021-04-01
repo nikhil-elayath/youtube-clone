@@ -7,14 +7,12 @@ import {
 
 
 
-  console.log("url",url)
 
 
 export const search= (data)=> async (dispatch) =>{
     
-    // console.log("from serach action", data)
     return axios
-    .post('url'+'search/search', data)
+    .post(url+'search/search', data)
     .then(response => {
         console.log("response from actons", response.data.data)
        return dispatch({

@@ -17,26 +17,7 @@ export default function MainSection() {
                 <li>Search--Integrated with Youtube's endpoint APIS it provides the almost the same search results that th OG Youtube will provide for the same search keyword. Go try if you want ;) </li>
                 <li>Play Videos--You can also play the search videos and all the data like views, likes etc are all dynamic) </li>
             </ul>
-            <ul> 
-                <li>Search--Integrated with Youtube's endpoint APIS it provides the almost the same search results that th OG Youtube will provide for the same search keyword. Go try if you want ;) </li>
-                <li>Play Videos--You can also play the search videos and all the data like views, likes etc are all dynamic) </li>
-            </ul>
-            <ul> 
-                <li>Search--Integrated with Youtube's endpoint APIS it provides the almost the same search results that th OG Youtube will provide for the same search keyword. Go try if you want ;) </li>
-                <li>Play Videos--You can also play the search videos and all the data like views, likes etc are all dynamic) </li>
-            </ul>
-            <ul> 
-                <li>Search--Integrated with Youtube's endpoint APIS it provides the almost the same search results that th OG Youtube will provide for the same search keyword. Go try if you want ;) </li>
-                <li>Play Videos--You can also play the search videos and all the data like views, likes etc are all dynamic) </li>
-            </ul>
-            <ul> 
-                <li>Search--Integrated with Youtube's endpoint APIS it provides the almost the same search results that th OG Youtube will provide for the same search keyword. Go try if you want ;) </li>
-                <li>Play Videos--You can also play the search videos and all the data like views, likes etc are all dynamic) </li>
-            </ul>
-            <ul> 
-                <li>Search--Integrated with Youtube's endpoint APIS it provides the almost the same search results that th OG Youtube will provide for the same search keyword. Go try if you want ;) </li>
-                <li>Play Videos--You can also play the search videos and all the data like views, likes etc are all dynamic) </li>
-            </ul>
+           
             <p> May the code be with you
             https://github.com/nikhil-elayath/youtube-clone
             </p>

@@ -1,0 +1,41 @@
+
+/* mobile */
+@media only screen and (max-width: 480px) {
+
+    #searchMain{
+        display: none;
+    
+    }
+
+    #searchIconForMobile{
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+
+
+
+
+
+
+}
+
+@media only screen and (min-width: 480px) {
+
+
+#searchIconForMobile{
+    display: none;
+
+}
+
+#searchMain
+{
+    display:flex;
+     align-items:"center";
+    
+     border:1px solid #CCCDCD
+
+}
+
+
+}
