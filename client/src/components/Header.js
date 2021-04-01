@@ -102,7 +102,7 @@ history.push( "/search"
                 <div id="mobileSearchField">
                 <form onSubmit={onSearchSubmit}> 
 
-                <input type="text" name="search" placeholder="Seadddrch" onChange={onTextEnter} style={{ width:"250%", height:"30px", flex:1, alignItems:"center", border:"none", paddingLeft:"10px"}}/>
+                <input type="text" name="search" placeholder="Seadddrch" onChange={onTextEnter} style={{ width:"250%", height:"30px", flex:1, alignItems:"center", border:"1px solid #CCCDCD", paddingLeft:"10px"}}/>
             </form>
             </div>
 }

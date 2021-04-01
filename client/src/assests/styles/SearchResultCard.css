@@ -2,16 +2,18 @@
     display: grid;
     grid-template-columns: 2.5fr 5fr;
     grid-column-gap: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    /* background-color: aqua; */
  
 
 }
 #detailsContainer{
     padding-left: 20px;
-    /* padding-top: 1px; */
-  
-    /* background-color: aquamarine; */
     align-items: center;
+    font-size: 1.5vh;
 }
 
 #imageContainer{

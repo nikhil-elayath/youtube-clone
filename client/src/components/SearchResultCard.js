@@ -51,7 +51,7 @@ export default function SearchResultCard(props) {
 
                 </div>
                 <div id="detailsContainer">
-                   {item.snippet.channelTitle}
+                   {item.snippet.title}
                  
 
                   
