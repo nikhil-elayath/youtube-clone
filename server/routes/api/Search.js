@@ -13,7 +13,8 @@ const currentDate= new Date()
 router.post("/search", async (req, res, next) => {
   console.log(req.body)
     console.log("from search", req.body.data)
-    let searchQuery=req.body.searchQuery
+
+    let searchQuery=req.body.searchQuery&&req.body.searchQuery
     console.log("searchQuery",searchQuery)
 
 
@@ -22,7 +23,7 @@ try {
       google.youtube('v3').search.list({
         key:'AIzaSyDwOxM66btmflpeUkt6Q6Ahg3beRz4CBY4',
         part:'snippet',
-        q:searchQuery,
+        q:searchQuery.length!=0&&searchQuery,
         order:"relevance",
         // publishedBefore: currentDate,
         // location
@@ -46,6 +47,9 @@ try {
   
 
 })
+
+
+
 
   
 

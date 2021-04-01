@@ -38,7 +38,7 @@ function VideoSpecific(props) {
             return(
                 <>
         <div id="videoSpecificContainer">
-        <YouTube videoId={location.pathname.split('/')[2]} opts={{width:"70%",}}  />
+        <YouTube videoId={location.pathname.split('/')[2]} opts={{width:"90%", alignItems:"center", }}  />
         <div id="videoTitle">
             <p>
         </p>
@@ -46,7 +46,7 @@ function VideoSpecific(props) {
         <VideoDetails likes={item.statistics.likeCount} dislikes={item.statistics.dislikeCount} viewCount={item.statistics.viewCount}/>
 
         </div>
-        <div style={{width:"70%"}}>
+        <div style={{width:"90%"}}>
         <hr/>
         </div>
 

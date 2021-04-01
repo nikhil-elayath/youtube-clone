@@ -1,5 +1,13 @@
+
+
+@media only screen and (max-width: 480px) {
+
 #videoSpecificContainer{
-    /* width: 100%; */
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    padding-left: 15px;
+    height: 150%;
 
 }
 
@@ -7,5 +15,27 @@
     font-size: 150%;
     padding: 0;
     margin: 0;
+
+}
+
+}
+
+
+@media only screen and (min-width: 480px) {
+
+#videoSpecificContainer{
+    width: 100%;
+    padding: 10px;
+    height: 150%;
+ 
+
+}
+
+#videoTitle>p{
+    font-size: 150%;
+    padding: 0;
+    margin: 0;
+
+}
 
 }

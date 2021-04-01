@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 70%;
+    width: 100%;
     padding-top: 10px;
 }
 #viewsAndDateMainContaiener{
@@ -17,4 +17,8 @@
     flex-direction: row;
     width: 70%;
     align-content: center;
+}
+
+#text1{
+    font-size: 100%;
 }
